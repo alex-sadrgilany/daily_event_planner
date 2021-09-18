@@ -28,7 +28,15 @@ THEN the saved events persist
 
 ### Deployed Webpage
 
+https://asadg7.github.io/daily_event_planner/
+
 ### Description
+
+This website was built to serve as an event planner for normal 9-5 work hours. Users can create events for each hour within that time frame and save those events to local storage. The saved events will persist.
+
+The website also utilizes moment.js to adjust the hour time blocks to be color coded. Hours in the past will feature a gray background. Hours in the present will feature a red background. And hours in the future will feature a green background.
+
+The user also can choose to delete an event if they wish. Deleting an event will trigger a confirm window in case it is ever clicked by accident. If a user attempts to save an empty event, there is also a confirm window in the case of accidents.
 
 ### Screenshots
 
