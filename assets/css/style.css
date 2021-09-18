@@ -92,3 +92,30 @@ textarea{
   display: block;
   font-size: 23px;
 }
+
+.key {
+  border: 1px dashed black;
+}
+
+.key p {
+  font-size: 17px;
+}
+
+
+#key1 {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+#key5 {
+  background-color: #06AED5;
+  color: white;
+}
+
+#key6 {
+  background-color: black;
+  color: red;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+

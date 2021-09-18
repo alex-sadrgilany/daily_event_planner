@@ -31,7 +31,7 @@ var saveText = function() {
 
 var loadText = function() {
     // create an array of all the necessary hour ids
-    var hourIdArray = ["am9", "am10", "am11", "pm12", "pm1", "pm2", "pm3", "pm4", "pm5"];
+    var hourIdArray = ["am9", "am10", "am11", "pm12", "pm13", "pm14", "pm15", "pm16", "pm17"];
 
     // create a for loop to get local storage for each hour's unique id
     for (i = 0; i < hourIdArray.length; i++) {
@@ -64,22 +64,31 @@ var checkTime = function() {
     var currentHour = moment().hour();
 
     // using split to capture only the number from each row's id
-    var plannerTime = $(".time-block").attr("id").split("m")[1];
+    var plannerTime = parseInt($(this).attr("id").split("m")[1]);
+
+    console.log(plannerTime);
+    console.log(currentHour);
 
     if (plannerTime < currentHour) {
         $(this).removeClass("present");
         $(this).removeClass("future");
         $(this).addClass("past");
+        console.log("this worked1");
     }
     else if (plannerTime === currentHour) {
         $(this).removeClass("future");
         $(this).removeClass("past");
         $(this).addClass("present");
+        console.log("this worked2");
     }
     else if (plannerTime > currentHour) {
         $(this).removeClass("past");
         $(this).removeClass("present");
         $(this).addClass("future");
+        console.log("this worked3");
+    }
+    else {
+        return;
     }
     
 }
