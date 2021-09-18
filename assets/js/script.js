@@ -40,6 +40,25 @@ var loadText = function() {
     };
 };
 
+var deleteText = function() {
+    // Grabbing the proper text from the sibling of the button the user just clicked
+    var text2 = $(this).siblings(".description");
+    // Grabbing the id of the parent
+    var hour2 = $(this).parent().attr("id");
+
+    // confirm the user wants to delete
+    var yesNo = confirm("Are you sure you want to delete this event?");
+        if (yesNo) {
+            text2.val("");
+        }
+        else {
+            return;
+        }
+    
+    localStorage.setItem(hour2, text2.val());
+    loadText();
+}
+
 // Creating a function that will check the current hour against the hour of each row
 var checkTime = function() {
     var currentHour = moment().hour();
@@ -66,6 +85,8 @@ var checkTime = function() {
 }
 
 $(".saveBtn").on("click", saveText);
+
+$(".deleteBtn").on("click", deleteText);
 
 loadText();
 
