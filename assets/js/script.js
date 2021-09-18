@@ -17,6 +17,7 @@ var saveText = function() {
         var yesNo = confirm("Your event for this hour is empty. Are you sure you want to save?");
             if (yesNo) {
                 localStorage.setItem(hour, text);
+                console.log("The user's event was saved!");
             }
             else {
                 // replace value of this hour's text box with the last saved text
@@ -26,6 +27,7 @@ var saveText = function() {
     // Saving to Local Storage
     else {
         localStorage.setItem(hour, text);
+        console.log("The user's event was saved!");
     }
 }   
 
@@ -38,6 +40,7 @@ var loadText = function() {
         var id = hourIdArray[i];
         $("#"+ id + " .description").val(localStorage.getItem(id));
     };
+    console.log("All of the user's events were loaded!");
 };
 
 var deleteText = function() {
@@ -56,6 +59,7 @@ var deleteText = function() {
         }
     
     localStorage.setItem(hour2, text2.val());
+    console.log("The user's event was deleted!");
     loadText();
 }
 
@@ -66,37 +70,30 @@ var checkTime = function() {
     // using split to capture only the number from each row's id
     var plannerTime = parseInt($(this).attr("id").split("m")[1]);
 
-    console.log(plannerTime);
-    console.log(currentHour);
-
     if (plannerTime < currentHour) {
         $(this).removeClass("present");
         $(this).removeClass("future");
         $(this).addClass("past");
-        console.log("this worked1");
     }
     else if (plannerTime === currentHour) {
         $(this).removeClass("future");
         $(this).removeClass("past");
         $(this).addClass("present");
-        console.log("this worked2");
     }
     else if (plannerTime > currentHour) {
         $(this).removeClass("past");
         $(this).removeClass("present");
         $(this).addClass("future");
-        console.log("this worked3");
     }
     else {
         return;
     }
-    
 }
 
 $(".saveBtn").on("click", saveText);
 
 $(".deleteBtn").on("click", deleteText);
 
-loadText();
-
 $(".time-block").each(checkTime);
+
+loadText();

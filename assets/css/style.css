@@ -41,6 +41,10 @@ textarea{
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+  border-left: 1px dashed #000000;
+  border-bottom: 1px dashed #000000;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .past {
@@ -81,10 +85,12 @@ textarea{
   transition: all .3s ease-in-out;
 }
 
+/* Making the current date and time match the color of that hour's textarea */
 #currentDay {
   color: #ff6961;
 }
 
+/* Styles for the save and trash icons */
 .fa-save,
 .fa-trash-alt {
   margin-left: auto;
@@ -93,23 +99,33 @@ textarea{
   font-size: 23px;
 }
 
-.key {
-  border: 1px dashed black;
-}
-
+/* Styles for the Legend Key in the Header */
 .key p {
   font-size: 17px;
 }
 
-
 #key1 {
+  border-top: 1px dashed #000000;
+  border-left: 1px dashed #000000;
+  border-bottom: 1px dashed #000000;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+}
+
+#key2 {
+  color: black;
+  border-left: 1px solid black;
+}
+
+#key3,
+#key4 {
+  color: black;
 }
 
 #key5 {
   background-color: #06AED5;
   color: white;
+  border-left: 1px solid black;
 }
 
 #key6 {
