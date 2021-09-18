@@ -157,8 +157,19 @@ textarea{
   .hour,
   .description,
   .saveBtn,
-  .deleteBtn {
+  .deleteBtn,
+  #key5 {
     border-top: 3px solid white;
+  }
+  #key1,
+  .hour {
+    border: 1px solid black;
+  }
+  #key2 {
+    border-top: 3px solid white;
+  }
+  .deleteBtn {
+    border-bottom: 5px solid white;
   }
   
   
