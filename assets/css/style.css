@@ -135,3 +135,31 @@ textarea{
   border-bottom-right-radius: 15px;
 }
 
+@media screen and (max-width: 575px) {
+  .row {
+    height: auto;
+  }
+  textarea,
+  .hour,
+  .saveBtn,
+  #key1,
+  #key2,
+  #key5 {
+    border: none;
+  }
+  #key1,
+  #key6,
+  .hour,
+  .deleteBtn {
+    border-radius: 0px;
+  }
+  .key,
+  .hour,
+  .description,
+  .saveBtn,
+  .deleteBtn {
+    border-top: 3px solid white;
+  }
+  
+  
+}
