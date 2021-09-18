@@ -40,6 +40,8 @@ The user also can choose to delete an event if they wish. Deleting an event will
 
 ### Screenshots
 
+[](./assets/images/planner_screenshot.PNG)
+
 ### License
 
 MIT License
