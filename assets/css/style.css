@@ -60,13 +60,35 @@ textarea{
 
 .saveBtn {
   border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
   background-color: #06AED5;
   color: white;
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
+  font-size: 29px;
   transition: all .3s ease-in-out;
+}
+
+.deleteBtn {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: black;
+  color: red;
+}
+
+.deleteBtn i:hover {
+  font-size: 29px;
+  transition: all .3s ease-in-out;
+}
+
+#currentDay {
+  color: #ff6961;
+}
+
+.fa-save,
+.fa-trash-alt {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: 23px;
 }
