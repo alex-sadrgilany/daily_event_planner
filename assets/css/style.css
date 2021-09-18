@@ -135,6 +135,30 @@ textarea{
   border-bottom-right-radius: 15px;
 }
 
+/* Creating Media Queries for Tablets */
+@media screen and (max-width: 768px) {
+  .row {
+    height: auto;
+  }
+  .key,
+  .hour,
+  .description,
+  .saveBtn,
+  .deleteBtn {
+    height: 100px;
+  }
+  .time-block {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #key5 p,
+  #key6 p {
+    writing-mode: vertical-lr;
+  }
+}
+
+/* Creating Media Queries for Mobile Phones */
 @media screen and (max-width: 575px) {
   .row {
     height: auto;
@@ -168,9 +192,19 @@ textarea{
   #key2 {
     border-top: 3px solid white;
   }
+  .hour,
+  .description,
+  .saveBtn,
   .deleteBtn {
-    border-bottom: 5px solid white;
+    height: 100px;
   }
-  
-  
+  .time-block {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #key5 p,
+  #key6 p {
+    writing-mode: unset;
+  }
 }
