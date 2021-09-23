@@ -4,30 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Adding Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <!-- Adding Font Awesome Icons -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <!-- Adding Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <!-- Adding local stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Daily Event Planner</title>
+    <!-- Adding a favicon -->
     <link rel="icon" type="image/png" href="./assets/images/calendar_favicon.PNG" />
   </head>
 
   <body>
+    <!-- Jumbotron Content -->
     <header class="jumbotron">
       <h1 class="display-3">Daily Event Planner</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+      <!-- Displaying the current date and time -->
       <p id="currentDay" class="lead"></p>
+      <!-- Creating a Legend/Key to display how each hour will look based on time -->
       <div class="container">
         <div class="row">
           <div class="col-sm-1 key" id="key1">
@@ -51,184 +59,150 @@
         </div>
       </div>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+    <!-- Main Site Content -->
+    <main>
       
-      <div class="row time-block" id="am9">
-        
-        <div class="col-sm-1 hour">
-          <p>9 A.M.</p>
+      <div class="container">
+        <!-- Timeblocks go here -->
+        <div class="row time-block" id="am9">
+          <!-- Column to display the hour block -->
+          <div class="col-sm-1 hour">
+            <p>9 A.M.</p>
+          </div>
+          <!-- Textarea to allow the user to enter any information they want -->
+          <textarea class="description col-sm-9">
+          </textarea>
+          <!-- Button to allow the user to save their textarea -->
+          <button class="saveBtn col-sm-1">
+            <i class="fa fa-save"></i>
+          </button>
+          <!-- Button to allow the user to delete their textarea -->
+          <button class="deleteBtn col-sm-1">
+            <i class="fas fa-trash-alt"></i>
+          </button>
         </div>
-        
-        <textarea class="description col-sm-9">
-        </textarea>
-        
-        <button class="saveBtn col-sm-1">
-          <i class="fa fa-save"></i>
-        </button>
 
-        <button class="deleteBtn col-sm-1">
-          <i class="fas fa-trash-alt"></i>
-        </button>
+        <div class="row time-block" id="am10">
+          <div class="col-sm-1 hour">
+            <p>10 A.M.</p>
+          </div>
+          <textarea class="description col-sm-9">
+          </textarea>
+          <button class="saveBtn col-sm-1">
+            <i class="fa fa-save"></i>
+          </button>
+          <button class="deleteBtn col-sm-1">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </div>
+
+        <div class="row time-block" id="am11">
+          <div class="col-sm-1 hour">
+            <p>11 A.M.</p>
+          </div>
+          <textarea class="description col-sm-9">
+          </textarea>
+          <button class="saveBtn col-sm-1">
+            <i class="fa fa-save"></i>
+          </button>
+          <button class="deleteBtn col-sm-1">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </div>
+
+        <div class="row time-block" id="pm12">
+          <div class="col-sm-1 hour">
+            <p>12 P.M.</p>
+          </div>
+          <textarea class="description col-sm-9">
+          </textarea>
+          <button class="saveBtn col-sm-1">
+            <i class="fa fa-save"></i>
+          </button>
+          <button class="deleteBtn col-sm-1">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </div>
+
+        <div class="row time-block" id="pm13">
+          <div class="col-sm-1 hour">
+            <p>1 P.M.</p>
+          </div>
+          <textarea class="description col-sm-9">
+          </textarea>
+          <button class="saveBtn col-sm-1">
+            <i class="fa fa-save"></i>
+          </button>
+          <button class="deleteBtn col-sm-1">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </div>
+
+        <div class="row time-block" id="pm14">
+          <div class="col-sm-1 hour">
+            <p>2 P.M.</p>
+          </div>
+          <textarea class="description col-sm-9">
+          </textarea>
+          <button class="saveBtn col-sm-1">
+            <i class="fa fa-save"></i>
+          </button>
+          <button class="deleteBtn col-sm-1">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </div>
+
+        <div class="row time-block" id="pm15">
+          <div class="col-sm-1 hour">
+            <p>3 P.M.</p>
+          </div>
+          <textarea class="description col-sm-9">
+          </textarea>
+          <button class="saveBtn col-sm-1">
+            <i class="fa fa-save"></i>
+          </button>
+          <button class="deleteBtn col-sm-1">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </div>
+
+        <div class="row time-block" id="pm16">
+          <div class="col-sm-1 hour">
+            <p>4 P.M.</p>
+          </div>
+          <textarea class="description col-sm-9">
+          </textarea>
+          <button class="saveBtn col-sm-1">
+            <i class="fa fa-save"></i>
+          </button>
+          <button class="deleteBtn col-sm-1">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </div>
+
+        <div class="row time-block" id="pm17">
+          <div class="col-sm-1 hour">
+            <p>5 P.M.</p>
+          </div>
+          <textarea class="description col-sm-9">
+          </textarea>
+          <button class="saveBtn col-sm-1">
+            <i class="fa fa-save"></i>
+          </button>
+          <button class="deleteBtn col-sm-1">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </div>
       
       </div>
 
-      <div class="row time-block" id="am10">
-        
-        <div class="col-sm-1 hour">
-          <p>10 A.M.</p>
-        </div>
-        
-        <textarea class="description col-sm-9">
-        </textarea>
-        
-        <button class="saveBtn col-sm-1">
-          <i class="fa fa-save"></i>
-        </button>
+    </main>
 
-        <button class="deleteBtn col-sm-1">
-          <i class="fas fa-trash-alt"></i>
-        </button>
-      
-      </div>
-
-      <div class="row time-block" id="am11">
-        
-        <div class="col-sm-1 hour">
-          <p>11 A.M.</p>
-        </div>
-        
-        <textarea class="description col-sm-9">
-        </textarea>
-        
-        <button class="saveBtn col-sm-1">
-          <i class="fa fa-save"></i>
-        </button>
-
-        <button class="deleteBtn col-sm-1">
-          <i class="fas fa-trash-alt"></i>
-        </button>
-      
-      </div>
-
-      <div class="row time-block" id="pm12">
-        
-        <div class="col-sm-1 hour">
-          <p>12 P.M.</p>
-        </div>
-        
-        <textarea class="description col-sm-9">
-        </textarea>
-        
-        <button class="saveBtn col-sm-1">
-          <i class="fa fa-save"></i>
-        </button>
-
-        <button class="deleteBtn col-sm-1">
-          <i class="fas fa-trash-alt"></i>
-        </button>
-      
-      </div>
-
-      <div class="row time-block" id="pm13">
-        
-        <div class="col-sm-1 hour">
-          <p>1 P.M.</p>
-        </div>
-        
-        <textarea class="description col-sm-9">
-        </textarea>
-        
-        <button class="saveBtn col-sm-1">
-          <i class="fa fa-save"></i>
-        </button>
-        
-        <button class="deleteBtn col-sm-1">
-          <i class="fas fa-trash-alt"></i>
-        </button>
-      
-      </div>
-
-      <div class="row time-block" id="pm14">
-        
-        <div class="col-sm-1 hour">
-          <p>2 P.M.</p>
-        </div>
-        
-        <textarea class="description col-sm-9">
-        </textarea>
-        
-        <button class="saveBtn col-sm-1">
-          <i class="fa fa-save"></i>
-        </button>
-
-        <button class="deleteBtn col-sm-1">
-          <i class="fas fa-trash-alt"></i>
-        </button>
-      
-      </div>
-
-      <div class="row time-block" id="pm15">
-        
-        <div class="col-sm-1 hour">
-          <p>3 P.M.</p>
-        </div>
-        
-        <textarea class="description col-sm-9">
-        </textarea>
-        
-        <button class="saveBtn col-sm-1">
-          <i class="fa fa-save"></i>
-        </button>
-
-        <button class="deleteBtn col-sm-1">
-          <i class="fas fa-trash-alt"></i>
-        </button>
-      
-      </div>
-
-      <div class="row time-block" id="pm16">
-        
-        <div class="col-sm-1 hour">
-          <p>4 P.M.</p>
-        </div>
-        
-        <textarea class="description col-sm-9">
-        </textarea>
-        
-        <button class="saveBtn col-sm-1">
-          <i class="fa fa-save"></i>
-        </button>
-
-        <button class="deleteBtn col-sm-1">
-          <i class="fas fa-trash-alt"></i>
-        </button>
-      
-      </div>
-
-      <div class="row time-block" id="pm17">
-        
-        <div class="col-sm-1 hour">
-          <p>5 P.M.</p>
-        </div>
-        
-        <textarea class="description col-sm-9">
-        </textarea>
-        
-        <button class="saveBtn col-sm-1">
-          <i class="fa fa-save"></i>
-        </button>
-
-        <button class="deleteBtn col-sm-1">
-          <i class="fas fa-trash-alt"></i>
-        </button>
-      
-      </div>
-    
-    </div>
-
+    <!-- Adding Jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Adding moment.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- Adding local JS -->
     <script src="./assets/js/script.js"></script>
   </body>
 </html>

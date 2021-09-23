@@ -4,7 +4,6 @@ var currentDateTime = moment().format("LLLL");
 $("#currentDay").html(currentDateTime);
 console.log("It is currently " + currentDateTime);
 
-
 var saveText = function() {
 
     // Grabbing the text from the sibling of the button the user just clicked
@@ -90,10 +89,10 @@ var checkTime = function() {
     }
 }
 
+// Adding event listeners to the necessary buttons
 $(".saveBtn").on("click", saveText);
-
 $(".deleteBtn").on("click", deleteText);
-
+// Calling the checkTime function to loop through each hour's time-block and update their classes accordingly
 $(".time-block").each(checkTime);
-
+// loading local storage
 loadText();
